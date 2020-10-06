@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="http://cdn.onlinewebfonts.com/svg/img_532767.png">
+    <title>SIMPLE PAINT</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="menu-bar">
+            <div class="menu-bar__tools">
+                <div class="tools">
+                    <div class="menu-bar__tools-pencil" onclick="pencilMode()"></div>
+                    <div class="menu-bar__tools-paint" onclick="paintMode()"></div>
+                    <div class="menu-bar__tools-text" onclick="textMode()"></div>
+                    <div class="menu-bar__tools-eraser" onclick="erase()"></div>
+                    <div class="menu-bar__tools-clear" onclick="clearCanvas()"></div>
+                </div>
+                <div class="menu-bar-title menu-tools__title">
+                    <h5>Tools</h5>
+                </div>
+            </div>
+            <div class="menu-bar__shapes">
+                <div class="shapes">
+                    <div class="menu-bar__shapes-line" onclick="lineMode()"></div>
+                    <div class="menu-bar__shapes-circle" onclick="circleMode()"></div>
+                    <div class="menu-bar__shapes-rectangle" onclick="rectangleMode()"></div>
+                </div>
+                <div class="menu-bar-title menu-shapes__title">
+                    <h5>Shapes</h5>
+                </div>
+            </div>
+            <div class="menu-bar__sizes">
+                <div class="size">
+                    <div class="menu-bar__size" data-size="1">
+                        <div class="sizeStyle size-1px"></div>
+                    </div>
+                    <div class="menu-bar__size" data-size="3">
+                        <div class="sizeStyle size-3px"></div>
+                    </div>
+                    <div class="menu-bar__size" data-size="5">
+                        <div class="sizeStyle size-5px"></div>
+                    </div>
+                    <div class="menu-bar__size" data-size="8">
+                        <div class="sizeStyle size-8px"></div>
+                    </div>
+                </div>
+                <div class="menu-bar-title menu-size__title"><h5>Size</h5></div>
+            </div>
+            <div class="menu-bar__color-picker">
+                <div class="color-picker">
+                    <div class="menu-bar__color-picker__color black" data-color="black"></div>
+                    <div class="menu-bar__color-picker__color gray" data-color="gray"></div>
+                    <div class="menu-bar__color-picker__color dark-red" data-color="#7c1414"></div>
+                    <div class="menu-bar__color-picker__color red" data-color="red"></div>
+                    <div class="menu-bar__color-picker__color orange" data-color="orange"></div>
+                    <div class="menu-bar__color-picker__color yellow" data-color="yellow"></div>
+                    <div class="menu-bar__color-picker__color green" data-color="green"></div>
+                    <div class="menu-bar__color-picker__color blue" data-color="blue"></div>
+                    <div class="menu-bar__color-picker__color light-blue" data-color="#6393ec"></div>
+                    <div class="menu-bar__color-picker__color purple" data-color="purple"></div>
+                    <div class="menu-bar__color-picker__color white" data-color="white"></div>
+                    <div class="menu-bar__color-picker__color light-gray" data-color="#c2c0c0"></div>
+                    <div class="menu-bar__color-picker__color brown" data-color="brown"></div>
+                    <div class="menu-bar__color-picker__color pink" data-color="pink"></div>
+                    <div class="menu-bar__color-picker__color gold" data-color="gold"></div>
+                    <div class="menu-bar__color-picker__color light-yellow" data-color="#fdff92"></div>
+                    <div class="menu-bar__color-picker__color lime" data-color="lime"></div>
+                    <div class="menu-bar__color-picker__color cyan" data-color="cyan"></div>
+                    <div class="menu-bar__color-picker__color turquoise" data-color="turquoise"></div>
+                    <div class="menu-bar__color-picker__color lavender" data-color="lavender"></div>
+                </div>
+                <div class="menu-bar-title menu-bar__color-picker-title">
+                    <h5>Color</h5>
+                </div>
+            </div>
+        </div>
+        <canvas id="canvas" width="1000" height="600"></canvas>
+    </div>
+    <script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
