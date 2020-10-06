@@ -116,6 +116,10 @@ const textMode = () => {
     turnOffAllFeatures()
     displayChoosenFeature('.menu-bar__tools-text')
     text.content = prompt('Input content: ')
+    if(!text.content) {
+        alert('invalid input')
+        text.content = ''
+    }
     text.status = true
 }
 
