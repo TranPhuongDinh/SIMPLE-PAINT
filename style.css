@@ -1,243 +1,299 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
 body {
-  background-color: #8a8a8a;
+    background-color: #fff;
 }
+
 .container {
-  width: 1000px;
-  height: 706px;
-  border: 3px solid black;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  background-color: #ffffff;
+    width: 1000px;
+    height: 706px;
+    border: 3px solid black;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
 }
+
 .container .menu-bar {
-  width: 100%;
-  height: 100px;
-  border-bottom: 1px solid black;
-  display: flex;
-  flex-direction: row;
+    width: 100%;
+    height: 100px;
+    border-bottom: 1px solid black;
+    display: flex;
+    flex-direction: row;
 }
+
 .container .menu-bar .menu-bar__tools {
-  width: 20%;
-  height: 100%;
-  border-right: 1px solid black;
+    width: 20%;
+    height: 100%;
+    border-right: 1px solid black;
 }
+
 .container .menu-bar .menu-bar__tools .tools {
-  height: 80%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
+
 .container .menu-bar .menu-bar__tools .tools div {
-  width: 33.33%;
-  height: 50%;
-  border: 1px solid black;
-  cursor: pointer;
+    width: 33.33%;
+    height: 50%;
+    border: 1px solid black;
+    cursor: pointer;
 }
+
 .container .menu-bar .menu-bar__tools .tools .menu-bar__tools-clear {
-  width: 66.66%;
-  background: url('https://media.istockphoto.com/vectors/canvas-stand-vector-id450594691?k=6&m=450594691&s=612x612&w=0&h=AcgwaE9TBJe9XNZgZbx5K5ey9aHG1S7zRWO_sPmung4=') center no-repeat;
-  background-size: contain;
+    width: 66.66%;
+    background: url('https://media.istockphoto.com/vectors/canvas-stand-vector-id450594691?k=6&m=450594691&s=612x612&w=0&h=AcgwaE9TBJe9XNZgZbx5K5ey9aHG1S7zRWO_sPmung4=') center no-repeat;
+    background-size: contain;
 }
+
 .container .menu-bar .menu-bar__tools .tools .menu-bar__tools-pencil {
-  border: 5px solid blue;
-  background: url('https://th.bing.com/th/id/OIP.LBwFGYhCtei6iN2yudHDVAHaHa?w=162&h=180&c=7&o=5&dpr=1.25&pid=1.7') center no-repeat;
-  background-size: contain;
+    border: 5px solid blue;
+    background: url('https://th.bing.com/th/id/OIP.LBwFGYhCtei6iN2yudHDVAHaHa?w=162&h=180&c=7&o=5&dpr=1.25&pid=1.7') center no-repeat;
+    background-size: contain;
 }
+
 .container .menu-bar .menu-bar__tools .tools .menu-bar__tools-eraser {
-  background: url('https://th.bing.com/th/id/OIP.kmtOlPShN9pH500DR5SeIgAAAA?pid=Api&rs=1') center no-repeat;
-  background-size: contain;
+    background: url('https://th.bing.com/th/id/OIP.kmtOlPShN9pH500DR5SeIgAAAA?pid=Api&rs=1') center no-repeat;
+    background-size: contain;
 }
+
 .container .menu-bar .menu-bar__tools .tools .menu-bar__tools-paint {
-  background: url('https://th.bing.com/th/id/OIP.DBKl-zoZGL439pT3hSlpvwHaG-?pid=Api&rs=1') center no-repeat;
-  background-size: contain;
+    background: url('https://th.bing.com/th/id/OIP.DBKl-zoZGL439pT3hSlpvwHaG-?pid=Api&rs=1') center no-repeat;
+    background-size: contain;
 }
+
 .container .menu-bar .menu-bar__tools .tools .menu-bar__tools-text {
-  background: url('https://th.bing.com/th/id/OIP.y7biJBIVZLHaorzfu1SkVgHaHa?pid=Api&w=600&h=600&rs=1') center no-repeat;
-  background-size: contain;
+    background: url('https://th.bing.com/th/id/OIP.y7biJBIVZLHaorzfu1SkVgHaHa?pid=Api&w=600&h=600&rs=1') center no-repeat;
+    background-size: contain;
 }
+
 .container .menu-bar .menu-bar__tools .menu-tools__title {
-  text-align: center;
+    text-align: center;
 }
+
 .container .menu-bar .menu-bar__shapes {
-  width: 20%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  border-right: 1px solid black;
-  border-bottom: none;
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid black;
+    border-bottom: none;
 }
+
 .container .menu-bar .menu-bar__shapes .shapes {
-  width: 100%;
-  height: 80%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
+
 .container .menu-bar .menu-bar__shapes .shapes div {
-  width: 33.33%;
-  height: 100%;
-  border: 1px solid black;
-  border-top: none;
-  cursor: pointer;
+    width: 33.33%;
+    height: 100%;
+    border: 1px solid black;
+    border-top: none;
+    cursor: pointer;
 }
+
 .container .menu-bar .menu-bar__shapes .shapes .menu-bar__shapes-rectangle {
-  background: url('https://th.bing.com/th/id/OIP.z5917V7ccEVpYUSLhkMKWgHaDs?pid=Api&rs=1') center no-repeat;
-  background-size: contain;
+    background: url('https://th.bing.com/th/id/OIP.z5917V7ccEVpYUSLhkMKWgHaDs?pid=Api&rs=1') center no-repeat;
+    background-size: contain;
 }
+
 .container .menu-bar .menu-bar__shapes .shapes .menu-bar__shapes-circle {
-  background: url('https://101clipart.com/wp-content/uploads/08/Black%20And%20White%20Circle%20Clip%20Art%2003.png') center no-repeat;
-  background-size: contain;
+    background: url('https://101clipart.com/wp-content/uploads/08/Black%20And%20White%20Circle%20Clip%20Art%2003.png') center no-repeat;
+    background-size: contain;
 }
+
 .container .menu-bar .menu-bar__shapes .shapes .menu-bar__shapes-curve {
-  background: url('https://th.bing.com/th/id/OIP.RA0lUp1jhIoKUy7TnZMZ8gHaHI?pid=Api&rs=1') center no-repeat;
-  background-size: contain;
+    background: url('https://th.bing.com/th/id/OIP.RA0lUp1jhIoKUy7TnZMZ8gHaHI?pid=Api&rs=1') center no-repeat;
+    background-size: contain;
 }
+
 .container .menu-bar .menu-bar__shapes .shapes .menu-bar__shapes-line {
-  background: url('https://th.bing.com/th/id/OIP.1mBJHYGyh7CMp_E9lubKMwAAAA?pid=Api&rs=1') center no-repeat;
-  background-size: contain;
+    background: url('https://th.bing.com/th/id/OIP.1mBJHYGyh7CMp_E9lubKMwAAAA?pid=Api&rs=1') center no-repeat;
+    background-size: contain;
 }
+
 .container .menu-bar .menu-bar__shapes .menu-shapes__title {
-  text-align: center;
+    text-align: center;
 }
+
 .container .menu-bar .menu-bar__sizes {
-  width: 30%;
-  border-right: 1px solid black;
-  display: flex;
-  flex-direction: column;
+    width: 30%;
+    border-right: 1px solid black;
+    display: flex;
+    flex-direction: column;
 }
+
 .container .menu-bar .menu-bar__sizes .size {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  border-bottom: 1px solid black;
-  height: 80%;
-  width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-bottom: 1px solid black;
+    height: 80%;
+    width: 100%;
 }
+
 .container .menu-bar .menu-bar__sizes .size .menu-bar__size {
-  align-self: center;
-  height: 20%;
-  width: 90%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  cursor: pointer;
+    align-self: center;
+    height: 20%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    cursor: pointer;
 }
+
 .container .menu-bar .menu-bar__sizes .size .menu-bar__size .sizeStyle {
-  width: 100%;
-  background: #000;
+    width: 100%;
+    background: #000;
 }
+
 .container .menu-bar .menu-bar__sizes .size .menu-bar__size .size-1px {
-  height: 1px;
+    height: 1px;
 }
+
 .container .menu-bar .menu-bar__sizes .size .menu-bar__size .size-3px {
-  height: 3px;
+    height: 3px;
 }
+
 .container .menu-bar .menu-bar__sizes .size .menu-bar__size .size-5px {
-  height: 5px;
+    height: 5px;
 }
+
 .container .menu-bar .menu-bar__sizes .size .menu-bar__size .size-8px {
-  height: 8px;
+    height: 8px;
 }
+
 .container .menu-bar .menu-bar__sizes .size .menu-bar__size:nth-child(1) {
-  border: 4px solid blue;
+    border: 4px solid blue;
 }
+
 .container .menu-bar .menu-bar__sizes .menu-size__title {
-  text-align: center;
+    text-align: center;
 }
+
 .container .menu-bar .menu-bar__color-picker {
-  width: 30%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
+
 .container .menu-bar .menu-bar__color-picker .color-picker {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  height: 80%;
-  width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 80%;
+    width: 100%;
 }
+
 .container .menu-bar .menu-bar__color-picker .color-picker .menu-bar__color-picker__color {
-  width: 10%;
-  height: 50%;
-  border: 1px solid purple;
-  cursor: pointer;
+    width: 10%;
+    height: 50%;
+    border: 1px solid purple;
+    cursor: pointer;
 }
+
 .container .menu-bar .menu-bar__color-picker .color-picker .menu-bar__color-picker__color:nth-child(1) {
-  border: 5px solid blue;
+    border: 5px solid blue;
 }
+
 .container .menu-bar .menu-bar__color-picker .red {
-  background-color: red;
+    background-color: red;
 }
+
 .container .menu-bar .menu-bar__color-picker .black {
-  background-color: black;
+    background-color: black;
 }
+
 .container .menu-bar .menu-bar__color-picker .gray {
-  background-color: gray;
+    background-color: gray;
 }
+
 .container .menu-bar .menu-bar__color-picker .yellow {
-  background-color: yellow;
+    background-color: yellow;
 }
+
 .container .menu-bar .menu-bar__color-picker .purple {
-  background-color: purple;
+    background-color: purple;
 }
+
 .container .menu-bar .menu-bar__color-picker .orange {
-  background-color: orange;
+    background-color: orange;
 }
+
 .container .menu-bar .menu-bar__color-picker .dark-red {
-  background-color: #7c1414;
+    background-color: #7c1414;
 }
+
 .container .menu-bar .menu-bar__color-picker .green {
-  background-color: green;
+    background-color: green;
 }
+
 .container .menu-bar .menu-bar__color-picker .blue {
-  background-color: blue;
+    background-color: blue;
 }
+
 .container .menu-bar .menu-bar__color-picker .light-blue {
-  background-color: #6393ec;
+    background-color: #6393ec;
 }
+
 .container .menu-bar .menu-bar__color-picker .white {
-  background-color: white;
+    background-color: white;
 }
+
 .container .menu-bar .menu-bar__color-picker .brown {
-  background-color: brown;
+    background-color: brown;
 }
+
 .container .menu-bar .menu-bar__color-picker .light-gray {
-  background-color: #c2c0c0;
+    background-color: #c2c0c0;
 }
+
 .container .menu-bar .menu-bar__color-picker .lime {
-  background-color: lime;
+    background-color: lime;
 }
+
 .container .menu-bar .menu-bar__color-picker .light-yellow {
-  background-color: #fdff94;
+    background-color: #fdff94;
 }
+
 .container .menu-bar .menu-bar__color-picker .pink {
-  background-color: pink;
+    background-color: pink;
 }
+
 .container .menu-bar .menu-bar__color-picker .turquoise {
-  background-color: turquoise;
+    background-color: turquoise;
 }
+
 .container .menu-bar .menu-bar__color-picker .cyan {
-  background-color: cyan;
+    background-color: cyan;
 }
+
 .container .menu-bar .menu-bar__color-picker .lavender {
-  background-color: lavender;
+    background-color: lavender;
 }
+
 .container .menu-bar .menu-bar__color-picker .gold {
-  background-color: gold;
+    background-color: gold;
 }
+
 .container .menu-bar .menu-bar__color-picker .menu-bar__color-picker-title {
-  height: 20%;
-  text-align: center;
+    height: 20%;
+    text-align: center;
 }
+
 .container .menu-bar-title {
-  height: 20%;
-  background-color: #c2c0c0;
+    height: 20%;
+    background-color: #c2c0c0;
 }
